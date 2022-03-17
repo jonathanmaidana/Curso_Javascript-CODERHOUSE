@@ -2,7 +2,7 @@ main{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    width: 100%
 }
 
 h1{
@@ -11,7 +11,9 @@ h1{
 
 .productos{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
     margin: 20px 0;
     width: 100%;
     height: auto;
@@ -20,7 +22,7 @@ h1{
 
 .productos__item{
     width: 300px;
-    margin: 0 50px;
+    margin: 20px 50px;
     border: 1px solid black;
     padding: 20px;
 }
