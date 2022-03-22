@@ -4,97 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scr/main.js"></script>
+    <script src="scr/main.js" defer></script>
     <link rel="stylesheet" href="css/styles.css">
     <title>Document</title>
 </head>
+<header>
+    <input type="search" id="buscador">
+    <button onclick="buscarProducto()" class="search-button">Buscar</button>
+</header>
 <body>
     <main>
         <h1>Productos</h1>
-        <div class="productos">
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador AMD Ryzen 7 5700G.jpg" alt="">
-                <div>
-                    <p>Procesador AMD Ryzen 7 5700G</p>
-                    <span>$ 48,600</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador gamer AMD Ryzen 5 5600X.jpg" alt="">
-                <div>
-                    <p>Procesador AMD Ryzen 5 5600X</p>
-                    <span>$ 41,000</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto1)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador gamer Intel Core i7-9700K.jpg" alt="">
-                <div>
-                    <p>Procesador Intel Core i7-9700K</p>
-                    <span>$ 42,300</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto2)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador Intel Core i5-10400F.jpg" alt="">
-                <div>
-                    <p>Procesador Intel Core i5-10400F</p>
-                    <span>$ 22,000</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto3)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador gamer AMD Ryzen 5 3600.jpg" alt="">
-                <div>
-                    <p>Procesador gamer AMD Ryzen 5 3600</p>
-                    <span>$ 37,000</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto4)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Procesador Intel Core i3-10100F.jpg" alt="">
-                <div>
-                    <p>Procesador Intel Core i3-10100F</p>
-                    <span>$ 13,000</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto5)">
-                    Comprar Producto
-                </button>
-            </div>
-
-            <div class="productos__item">
-                <h2>Producto</h2>
-                <img src="img/Micro Procesador Intel Core I5 9400.jpg" alt="">
-                <div>
-                    <p>Micro Procesador Intel Core I5 9400</p>
-                    <span>$ 26,000</span>
-                </div>
-                <button type="button" onclick="agregarAlCarrito (producto6)">
-                    Comprar Producto
-                </button>
-            </div>
+        <div id="productos">
+            
         </div>
     </main>
 </body>

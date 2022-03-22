@@ -1,3 +1,16 @@
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buscador{
+    width: 25vw;
+    height:2vw;
+    margin: 0 10px;
+}
+
+
 main{
     display: flex;
     justify-content: center;
@@ -9,7 +22,7 @@ h1{
     text-align: center;
 }
 
-.productos{
+#productos{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -35,4 +48,12 @@ img{
 button{
     padding: 20px;
     margin: 20px 0;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+    border: 1px solid black;
+}
+
+button:hover{
+    color: white;
+    background-color:black;
 }
