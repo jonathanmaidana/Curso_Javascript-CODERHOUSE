@@ -57,3 +57,19 @@ button:hover{
     color: white;
     background-color:black;
 }
+
+/* detalles html */
+
+.detalles{
+    width: 50vw;
+    height: 50vh;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.detalles-img{
+    width: 300px;
+    height: 300px;
+}

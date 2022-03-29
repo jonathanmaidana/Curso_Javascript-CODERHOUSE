@@ -54,10 +54,15 @@ for (const producto of productos)
                 <button type="button" onclick="agregarAlCarrito(${elementoDelArray.id})">
                     Comprar Producto
                 </button>
+                <button type="button" onclick="verProducto(${elementoDelArray.id})">
+                    Ver producto
+                </button>
         </div>`
         });
         mostrarCards(acumuladorDeCards);
     }
+
+
 
     /* VALIDAR STOCK */ 
 function validarStock(stockProducto, cantidadDeProductos){
@@ -78,7 +83,17 @@ const agregarAlCarrito = (idProductos) => {
     const productoAgregado = productos.find(producto => producto.id === idProductos);
     carrito.push(productoAgregado);
     console.log(carrito);
+
+    localStorage.setItem ("Que agregaste al carrito", JSON.stringify(carrito));
 }
+
+const verProducto = (idProductos) => {
+    const productoAver = productos.find(producto => producto.id === idProductos);
+
+    localStorage.setItem ("Producto a ver", JSON.stringify(productoAver));
+}
+
+
 // const botonCarrito = document.getElementById('agregarAlCarrito')
 
 // botonCarrito.onclick = () => {
@@ -121,4 +136,6 @@ function buscarProducto(){
     console.log(productosEncontrados);
     
     cardsGeneradas(productosEncontrados);
+
+    localStorage.setItem ("Producto que buscaste", JSON.stringify(productoBuscado));
 }
