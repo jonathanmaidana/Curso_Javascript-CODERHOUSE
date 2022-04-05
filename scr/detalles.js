@@ -1,2 +1,2 @@
-// let storageProductos = JSON.parse(localstorage.getItem(JSON.stringify(productoAver)))
+const storageProductos = JSON.parse(localstorage.getItem(productoAver)) || []
 

@@ -15,6 +15,9 @@ class Producto {
 /* ARRAY DE PRODUCTOS */ 
 const carrito = [];
 
+carrito.length === 0 && console.log("El carrito está vacío")
+
+
 
 const productos = [
     { id: 0, titulo: 'Procesador AMD Ryzen 7 5700G', precio: 48600, marca: 'AMD', imagen: ''},
@@ -25,13 +28,7 @@ const productos = [
     { id: 5, titulo: 'Procesador Intel Core i3-10100F', precio: 13000, marca: 'INTEL', imagen: ''},
     { id: 6, titulo: 'Micro Procesador Intel Core I5 9400', precio: 26000, marca: 'INTEL', imagen: ''}
 ];
-// productos.push(new Producto('0', 'Procesador AMD Ryzen 7 5700G', '48600', 'AMD',));
-// productos.push(new Producto('1', 'Procesador AMD Ryzen 5 5600X', '41000', 'AMD'));
-// productos.push(new Producto('2', 'Procesador gamer Intel Core i7-9700K','42300','INTEL'));
-// productos.push(new Producto('3', 'Procesador Intel Core i5-10400F', '22000', 'INTEL'));
-// productos.push(new Producto('4', 'Procesador gamer AMD Ryzen 5 3600', '37000', 'AMD'));
-// productos.push(new Producto('5', 'Procesador Intel Core i3-10100F', '13000', 'INTEL'));
-// productos.push(new Producto('6', 'Micro Procesador Intel Core I5 9400', '26000', 'INTEL'));
+
 for (const producto of productos)
     producto.sumaIva;
 
@@ -66,11 +63,7 @@ for (const producto of productos)
 
     /* VALIDAR STOCK */ 
 function validarStock(stockProducto, cantidadDeProductos){
-    if(stockProducto > cantidadDeProductos){
-        return true;
-    } else {
-        return false;
-    }
+    stockProducto > cantidadDeProductos ? true : false
 }
 
 function lugarAEnviar(){
@@ -93,19 +86,6 @@ const verProducto = (idProductos) => {
     localStorage.setItem ("Producto a ver", JSON.stringify(productoAver));
 }
 
-
-// const botonCarrito = document.getElementById('agregarAlCarrito')
-
-// botonCarrito.onclick = () => {
-//     const cantidadDeProductos = prompt('productos a comprar');
-//     const hayStock = validarStock(stockProducto, cantidadDeProductos);
-
-//     // if (hayStock){
-//     //     console.log('Agregaste al carrito ' + productos.titulo + ' x ' + cantidadDeProductos + ' a $' + (productos.precio * cantidadDeProductos) + ' ' + 'con un iva del 0.05%');
-//     // } else {
-//     //     console.log('No hay mas stock')
-//     // }
-// }
 
 /* Suma iva */ 
 const productosIva = productos.map(productos => {
