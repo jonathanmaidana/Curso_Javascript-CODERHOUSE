@@ -2,6 +2,15 @@ const suma = (a,b) => a + b
 const resta = (a,b) => a - b
 // const stockProducto = 10
 
+
+// let img = new imagen();
+// imagen.onload = imagenProducto;
+// imagen.src =
+
+// const img = new imagen();
+// img.src = ''
+
+
 class Producto {
     constructor(id, titulo, precio, marca, imagen){
     this.id = id;
@@ -20,7 +29,7 @@ carrito.length === 0 && console.log("El carrito está vacío")
 
 
 const productos = [
-    { id: 0, titulo: 'Procesador AMD Ryzen 7 5700G', precio: 48600, marca: 'AMD', imagen: ''},
+    { id: 0, titulo: 'Procesador AMD Ryzen 7 5700G', precio: 48600, marca: 'AMD', imagen: 'Micro Procesador Intel Core I5 9400' },
     { id: 1, titulo: 'Procesador AMD Ryzen 5 5600X', precio: 41000, marca: 'AMD', imagen: ''},
     { id: 2, titulo: 'Procesador gamer Intel Core i7-9700K', precio: 42300, marca: 'INTEL', imagen: ''},
     { id: 3, titulo: 'Procesador Intel Core i5-10400F', precio: 22000, marca: 'INTEL', imagen: ''},
@@ -76,6 +85,13 @@ const agregarAlCarrito = (idProductos) => {
     const productoAgregado = productos.find(producto => producto.id === idProductos);
     carrito.push(productoAgregado);
     console.log(carrito);
+    swal({
+        title: "Agregaste al carrito!",
+        text: `${productoAgregado.titulo} $${productoAgregado.precio}`,
+        icon: "success",
+        button: "Aceptar",
+        closeOnEsc: false
+    });
 
     localStorage.setItem ("Que agregaste al carrito", JSON.stringify(carrito));
 }
@@ -119,3 +135,11 @@ function buscarProducto(){
 
     localStorage.setItem ("Producto que buscaste", JSON.stringify(productoBuscado));
 }
+
+
+swal({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "success",
+    button: "Aww yiss!",
+});
