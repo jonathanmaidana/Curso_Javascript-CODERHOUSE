@@ -1,11 +1,3 @@
-const suma = (a,b) => a + b
-const resta = (a,b) => a - b
-const stockProducto = 10
-
-
-
-
-
 class Producto {
     constructor(id, titulo, precio, marca, imagen){
     this.id = id;
@@ -20,7 +12,6 @@ class Producto {
 const carrito = [];
 
 carrito.length === 0 && console.log("El carrito está vacío")
-
 
 
 const productos = [
@@ -91,11 +82,11 @@ const agregarAlCarrito = (idProductos) => {
     localStorage.setItem ("Que agregaste al carrito", JSON.stringify(carrito));
 }
 
-const verProducto = (idProductos) => {
-    const productoAver = productos.find(producto => producto.id === idProductos);
+// const verProducto = (idProductos) => {
+//     const productoAver = productos.find(producto => producto.id === idProductos);
 
-    localStorage.setItem ("Producto a ver", JSON.stringify(productoAver));
-}
+//     localStorage.setItem ("Producto a ver", JSON.stringify(productoAver));
+// }
 
 
 /* Suma iva */ 
@@ -130,11 +121,3 @@ function buscarProducto(){
 
     localStorage.setItem ("Producto que buscaste", JSON.stringify(productoBuscado));
 }
-
-
-swal({
-    title: "Good job!",
-    text: "You clicked the button!",
-    icon: "success",
-    button: "Aww yiss!",
-});
