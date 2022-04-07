@@ -1,14 +1,9 @@
 const suma = (a,b) => a + b
 const resta = (a,b) => a - b
-// const stockProducto = 10
+const stockProducto = 10
 
 
-// let img = new imagen();
-// imagen.onload = imagenProducto;
-// imagen.src =
 
-// const img = new imagen();
-// img.src = ''
 
 
 class Producto {
@@ -29,7 +24,7 @@ carrito.length === 0 && console.log("El carrito está vacío")
 
 
 const productos = [
-    { id: 0, titulo: 'Procesador AMD Ryzen 7 5700G', precio: 48600, marca: 'AMD', imagen: 'Micro Procesador Intel Core I5 9400' },
+    { id: 0, titulo: 'Procesador AMD Ryzen 7 5700G', precio: 48600, marca: 'AMD', imagen: '' },
     { id: 1, titulo: 'Procesador AMD Ryzen 5 5600X', precio: 41000, marca: 'AMD', imagen: ''},
     { id: 2, titulo: 'Procesador gamer Intel Core i7-9700K', precio: 42300, marca: 'INTEL', imagen: ''},
     { id: 3, titulo: 'Procesador Intel Core i5-10400F', precio: 22000, marca: 'INTEL', imagen: ''},
