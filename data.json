@@ -1,0 +1,68 @@
+{
+    "productos": [
+        {   
+            "id": 0,
+            "titulo": "Procesador AMD Ryzen 7 5700G",
+            "stock": 20, 
+            "precio": 48600,
+            "categoria": "Procesador AMD",
+            "imagen":"../../img/Procesador AMD Ryzen 7 5700G.jpg"
+        },
+        { 
+            "id": 1, 
+            "titulo": "Procesador AMD Ryzen 5 5600X", 
+            "stock": 10, 
+            "precio": 41000, 
+            "categoria": "Procesador AMD", 
+            "imagen": "../../img/Procesador gamer AMD Ryzen 5 5600X.jpg"
+        },
+        { 
+            "id": 2, 
+            "titulo": "Procesador gamer Intel Core i7-9700K", 
+            "stock": 0, 
+            "precio": 42300, 
+            "categoria": "Procesador INTEL", 
+            "imagen": "../../img/Procesador gamer Intel Core i7-9700K.jpg"
+        },
+        { 
+            "id": 3, 
+            "titulo": "Procesador Intel Core i5-10400F", 
+            "stock": 5, 
+            "precio": 22000, 
+            "categoria": "Procesador INTEL", 
+            "imagen": "../../img/Procesador Intel Core i5-10400F.jpg"
+        },
+        { 
+            "id": 4, 
+            "titulo": "Procesador gamer AMD Ryzen 5 3600", 
+            "stock": 15, 
+            "precio": 37000, 
+            "categoria": "Procesador AMD", 
+            "imagen": "../../img/Procesador gamer AMD Ryzen 5 3600.jpg"
+        },
+        { 
+            "id": 5, 
+            "titulo": "Procesador Intel Core i3-10100F", 
+            "stock": 0, 
+            "precio": 13000, 
+            "categoria": "Procesador INTEL", 
+            "imagen": "../../img/Procesador Intel Core i3-10100F.jpg"
+        },
+        { 
+            "id": 6, 
+            "titulo": "Micro Procesador Intel Core I5 9400",
+            "stock": 20, 
+            "precio": 26000, 
+            "categoria": "Procesador INTEL", 
+            "imagen": "../../img/Micro Procesador Intel Core I5 9400.jpg"
+        },
+        { 
+            "id": 6, 
+            "titulo": "Micro Procesador Intel Core I5 9400", 
+            "stock": 20, 
+            "precio": 26000,
+            "categoria": "Procesador INTEL", 
+            "imagen":""
+        }
+    ]
+}
